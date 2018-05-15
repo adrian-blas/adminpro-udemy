@@ -29,6 +29,7 @@ export class SettingsService {
       this.aplicarTema( this.ajustes.tema );
     }else{
       // console.log('usando valores por defecto')
+      this.aplicarTema( this.ajustes.tema );
     }
   }
 
@@ -40,6 +41,7 @@ export class SettingsService {
     this.ajustes.temaUrl = url;
 
     this.guardarAjustes();
+  }
 
 }
 
