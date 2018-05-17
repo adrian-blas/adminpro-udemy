@@ -8,23 +8,25 @@ import { HeaderComponent } from './header/header.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { BreadcrumbsComponent } from './breadcrumbs/breadcrumbs.component';
 
-@NgModule({
-  declarations:[
-    NopagefoundComponent,
-    HeaderComponent,
-    SidebarComponent,
-    BreadcrumbsComponent,
-  ],
-  exports:[
-    NopagefoundComponent,
-    HeaderComponent,
-    SidebarComponent,
-    BreadcrumbsComponent,
-  ],
-  imports:[
-    RouterModule,
-    CommonModule
-  ]
-})
 
-export class SharedModule{}
+@NgModule({
+    imports: [
+        RouterModule,
+        CommonModule
+    ],
+    declarations: [
+        NopagefoundComponent,
+        HeaderComponent,
+        SidebarComponent,
+        BreadcrumbsComponent,
+        NopagefoundComponent
+    ],
+    exports: [
+        NopagefoundComponent,
+        HeaderComponent,
+        SidebarComponent,
+        BreadcrumbsComponent,
+        NopagefoundComponent
+    ]
+})
+export class SharedModule { }
