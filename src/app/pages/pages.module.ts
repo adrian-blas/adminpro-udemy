@@ -20,6 +20,10 @@ import { Graficas1Component } from './graficas1/graficas1.component';
 // Pipe Module
 import { PipesModule } from '../pipes/pipes.module';
 
+// youtube videos
+import { YoutubePlayerModule } from 'ngx-youtube-player';
+import { VideosProfileComponent } from './videos-profile/videos-profile.component';
+
 // temporal
 import { IncrementadorComponent } from '../components/incrementador/incrementador.component';
 import { GraficoDonaComponent } from '../components/grafico-dona/grafico-dona.component';
@@ -29,6 +33,7 @@ import { RxjsComponent } from './rxjs/rxjs.component';
 import { ProfileComponent } from './profile/profile.component';
 import { UsuariosComponent } from './usuarios/usuarios.component';
 import { ModalUploadComponent } from '../components/modal-upload/modal-upload.component';
+import { HospitalesComponent } from './hospitales/hospitales.component';
 
 
 @NgModule({
@@ -44,7 +49,9 @@ import { ModalUploadComponent } from '../components/modal-upload/modal-upload.co
         RxjsComponent,
         ProfileComponent,
         UsuariosComponent,
-        ModalUploadComponent
+        ModalUploadComponent,
+        VideosProfileComponent,
+        HospitalesComponent
     ],
     exports: [
         DashboardComponent,
@@ -57,7 +64,8 @@ import { ModalUploadComponent } from '../components/modal-upload/modal-upload.co
         FormsModule,
         ChartsModule,
         PipesModule,
-        CommonModule
+        CommonModule,
+        YoutubePlayerModule
     ]
 })
 export class PagesModule { }

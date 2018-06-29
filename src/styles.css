@@ -31,3 +31,12 @@
 .oculto{
   display: none;
 }
+
+.panel-body{
+  padding: 15px;
+}
+
+iframe{
+  width: 50%;
+  /*height: 100%;*/
+}

@@ -12,6 +12,9 @@ import { ProfileComponent } from './profile/profile.component';
 
 import { LoginGuardGuard } from '../services/service.index';
 import { UsuariosComponent } from './usuarios/usuarios.component';
+import { HospitalesComponent } from './hospitales/hospitales.component';
+
+import { VideosProfileComponent } from './videos-profile/videos-profile.component';
 
 const pagesRoutes: Routes = [
     {
@@ -28,9 +31,11 @@ const pagesRoutes: Routes = [
             { path: 'rxjs', component: RxjsComponent, data: { titulo: 'Rxjs' } },
             { path: 'account-settings', component: AccoutSettingsComponent, data: { titulo: 'Ajustes de tema' } },
             { path: 'profile', component: ProfileComponent, data: { titulo: 'Perfil de usuario' } },
+            { path: 'videos-profile', component: VideosProfileComponent, data: { titulo: 'Videos del usuario' } },
 
             // Mantenimientos
             { path: 'usuarios', component: UsuariosComponent, data: { titulo: 'Mantenimientos de usuarios' } },
+            { path: 'hospitales', component: HospitalesComponent, data: { titulo: 'Mantenimientos de hospitales' } },
             { path: '', redirectTo: '/dashboard', pathMatch: 'full' }
         ]
     }
