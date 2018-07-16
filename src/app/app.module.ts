@@ -17,15 +17,12 @@ import { ServiceModule } from './services/service.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './login/register.component';
-import { MedicoComponent } from './pages/medicos/medico.component';
-
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    RegisterComponent,
-    MedicoComponent
+    RegisterComponent
   ],
   imports: [
     BrowserModule,
