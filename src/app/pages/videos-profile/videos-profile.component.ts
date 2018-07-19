@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class VideosProfileComponent implements OnInit {
 
   player: YT.Player;
-  private id: string = 'GFvxugJrL7M';
+  public id: string = 'GFvxugJrL7M';
 
   savePlayer (player) {
     this.player = player;
